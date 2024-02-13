@@ -2,8 +2,18 @@ package service
 
 import "github.com/GraphZC/mq-socket-programming/internal/model"
 
-var Queue *model.QueueLinkedList
+var queue *model.QueueLinkedList
 
 func InitQueueList() {
-	Queue = model.NewQueueLinkedList()
+	queue = model.NewQueueLinkedList()
 }
+
+func EnqueueMessage(topic string, message string) {
+	queue.Enqueue(topic, message)
+}
+
+func PrintQueue() {
+	queue.PrintQueue()
+}
+
+

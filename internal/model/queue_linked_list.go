@@ -48,7 +48,7 @@ func (q *QueueLinkedList) Enqueue(topic string, message string) {
 func (q *QueueLinkedList) PrintQueue() {
 	fmt.Printf("QueueLinkedList [%d]\n", q.Length)
 	for node := q.Head; node != nil; node = node.Next {
-		fmt.Printf("-> %s", node.Message)
+		fmt.Printf("-> [%s] %s\n", node.Topic, node.Message)
 	}
 }
 
