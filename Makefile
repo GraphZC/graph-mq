@@ -2,10 +2,8 @@ clean:
 	rm bin/server
 	rm bin/client
 
-build-server: clean
+build: clean 
 	go build -o bin/server .
-
-build-client: clean
 	go build -o bin/client client/main.go
 
 run-server-dev:
