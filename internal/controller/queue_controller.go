@@ -40,12 +40,6 @@ func handleClient(client net.Conn, collectMessageService *service.CollectMessage
 		cmd := service.ExtractCommand(msg)
 
 		switch cmd.Cmd {
-		case "AUTH":
-			// AUTH:USERNAME,PASSWORD
-			if len(cmd.Arguments) != 2 {
-				log.Println("401 BAD REQUEST")
-				return	
-			}
 		case "PUBL":
 			// PUBL:TOPIC,MESSAGE
 			if len(cmd.Arguments) != 2 {
