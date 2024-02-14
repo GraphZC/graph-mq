@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/GraphZC/mq-socket-programming/internal/model"
+	"github.com/GraphZC/graph-mq/internal/model"
 	"github.com/stretchr/testify/assert"
 )
 

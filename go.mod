@@ -1,4 +1,4 @@
-module github.com/GraphZC/mq-socket-programming
+module github.com/GraphZC/graph-mq
 
 go 1.21.5
 

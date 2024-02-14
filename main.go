@@ -4,8 +4,8 @@ import (
 	"log"
 	"net"
 
-	"github.com/GraphZC/mq-socket-programming/internal/controller"
-	"github.com/GraphZC/mq-socket-programming/internal/service"
+	"github.com/GraphZC/graph-mq/internal/controller"
+	"github.com/GraphZC/graph-mq/internal/service"
 )
 
 func main() {
@@ -14,7 +14,7 @@ func main() {
 	// Create the server connection
 	listener, err := net.Listen("tcp", ":18060")
 	if err != nil {
-		log.Println(err)
+		log.Println("ERR: ", err)
 		return
 	}
 

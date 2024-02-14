@@ -3,7 +3,7 @@ package service
 import (
 	"strings"
 
-	"github.com/GraphZC/mq-socket-programming/internal/model"
+	"github.com/GraphZC/graph-mq/internal/model"
 )
 
 func ExtractCommand(message string) model.Command {
